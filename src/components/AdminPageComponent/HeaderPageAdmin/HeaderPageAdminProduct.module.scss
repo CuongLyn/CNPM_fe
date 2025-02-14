@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+.wrapperList {
+    display: flex;
+    align-items: center;
+}
+.wrapperItem {
+    padding: 16px;
+}
+.wrapperListInput {
+    width: 100%;
+    font-size: 14px;
+    padding: 0 60px 0 20px;
+    background: #f3f4f7;
+    border-radius: 5px;
+    height: 52px;
+}
+
+//viết thêm
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+        flex-direction: column; // Xếp các phần theo chiều dọc trên mobile
+        align-items: flex-start; // Canh trái cho gọn hơn
+    }
+}
+
+.searchSection {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 5px;
+    }
+}
+
+.iconSection {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
